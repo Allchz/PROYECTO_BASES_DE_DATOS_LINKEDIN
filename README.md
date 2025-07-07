@@ -34,5 +34,5 @@ Construir una interfaz limpia y funcional inspirada en LinkedIn, con perfiles de
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/AllisonGomez/LinkedHub.git
+   git clone https://github.com/Allchz/PROYECTO_BASES_DE_DATOS_LINKEDIN.git
    cd LinkedHub
