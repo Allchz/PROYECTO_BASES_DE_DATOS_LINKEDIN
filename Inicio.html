@@ -2,75 +2,85 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>LinkedIn</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+          crossorigin="anonymous" />
+          
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Linkedin</title>
+
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-yFj9d+yoHCEtNmfMwP1gmU8Yb8Gm3YfDB5L3PHEsv9rM8QfyEhDCoRRYop1iRtv9DOaKjDcVfiYxrwOY2r3T2w==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+  
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <div class="wrapper">
-        <div class="left">
-          <div class="logo">
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-          <div class="input">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input
-              type="search"
-              placeholder="Search for job, Skills & Companies..."
-            />
-          </div>
-        </div>
-        <div class="right">
-          <div class="home">
-            <i class="fa-solid fa-house"></i>
-            <h6>Home</h6>
-          </div>
-          <div class="network">
-            <i class="fa-solid fa-user-group"></i>
-            <h6>My Network</h6>
-          </div>
-          <div class="jobs">
-            <i class="fa-solid fa-suitcase"></i>
-            <h6>Jobs</h6>
-          </div>
-          <div class="message">
-            <i class="fa-solid fa-message"></i>
-            <h6>Messaging</h6>
-          </div>
-          <div class="notification">
-            <i class="fa-solid fa-bell"></i>
-            <h6>Notifications</h6>
-          </div>
-          <div class="me">
-            <i class="fa-solid fa-user"></i>
-            <div class="down">
-              <h6>Me</h6>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-          </div>
-          <div class="work">
-            <i class="fa-solid fa-braille"></i>
-            <div class="down">
-              <h6>Work</h6>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-          </div>
-          <a href="#">Try Premium for free</a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-4 py-2 sticky-top">
+      <div class="container-fluid">
+        <!-- Logo LinkedIn -->
+        <a class="navbar-brand text-primary fw-bold" href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <!-- Input de búsqueda -->
+        <form class="d-flex align-items-center ms-3 me-auto">
+          <span class="me-2 text-muted"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input class="form-control" type="search" placeholder="Buscar empleo, habilidades o empresas..." aria-label="Buscar">
+        </form>
+
+        <!-- Íconos de navegación -->
+        <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
+          <li class="nav-item text-center">
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-house d-block"></i><small>Inicio</small></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-user-group d-block"></i><small>Mi red</small></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-suitcase d-block"></i><small>Empleos</small></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-message d-block"></i><small>Mensajes</small></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-bell d-block"></i><small>Notificaciones</small></a>
+          </li>
+
+          <!-- Menú desplegable Me -->
+          <li class="nav-item dropdown text-center">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user d-block"></i><small>Yo</small>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMe">
+              <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            </ul>
+          </li>
+
+          <!-- Menú desplegable Trabajo -->
+          <li class="nav-item dropdown text-center">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownWork" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-braille d-block"></i><small>Trabajo</small>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownWork">
+              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">Herramientas</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn btn-warning btn-sm ms-2" href="#">Prueba Premium gratis</a>
+          </li>
+        </ul>
       </div>
     </nav>
+ 
 
     <!-- =================== NAVABR ENDED HERE ===================== -->
     <div class="container">
