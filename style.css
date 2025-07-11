@@ -1,16 +1,57 @@
-    body {
-      background-color: #f4f2ee;
-    }
-    .sidebar, .right_side, .main_section {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
-    .sidebar img {
-      width: 100%;
-      border-radius: 50%;
-    }
-    .nav-link small {
-      font-size: 0.75rem;
-    }
+/* Paleta de colores basada en LinkedIn */
+:root {
+  --linkedin-blue: #0a66c2;
+  --linkedin-blue-dark: #004182;
+  --linkedin-gray-light: #f3f2ef;
+  --linkedin-text: #1d2226;
+  --linkedin-border: #d1d1d1;
+  --linkedin-yellow: #ffc107;
+  --linkedin-bg-hover: #edf3f8;
+}
+
+/* Fondo general */
+body {
+  background-color: var(--linkedin-gray-light);
+  color: var(--linkedin-text);
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid var(--linkedin-border);
+}
+
+/* Botón premium */
+.btn-premium {
+  background-color: var(--linkedin-yellow);
+  color: black;
+  border: none;
+}
+
+/* Enlaces estilo LinkedIn */
+.link-icon-text {
+  display: flex;
+  align-items: center;
+  color: var(--linkedin-text);
+  text-decoration: none;
+}
+
+.link-icon-text:hover,
+.link-icon-text:focus {
+  text-decoration: underline;
+}
+
+
+/* Sidebar perfil */
+.sidebar {
+  background-color: white;
+  border: 1px solid var(--linkedin-border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Elemento hover (para botones, tarjetas, etc.) */
+.hover-light:hover {
+  background-color: var(--linkedin-bg-hover);
+  cursor: pointer;
+}
