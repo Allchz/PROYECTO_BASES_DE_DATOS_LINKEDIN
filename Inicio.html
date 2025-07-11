@@ -1,276 +1,207 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkedIn</title>
+    <title>Feed LinkedIn</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
-          crossorigin="anonymous" />
-          
-    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-          integrity="sha512-yFj9d+yoHCEtNmfMwP1gmU8Yb8Gm3YfDB5L3PHEsv9rM8QfyEhDCoRRYop1iRtv9DOaKjDcVfiYxrwOY2r3T2w==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer" />
-  
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-4 py-2 sticky-top">
+
+  <body class="bg-light text-dark">
+    <!-- Barra Superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top px-4 py-2">
       <div class="container-fluid">
-        <!-- Logo LinkedIn -->
         <a class="navbar-brand text-primary fw-bold" href="#">
-          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-linkedin fa-2x"></i>
         </a>
-
-        <!-- Input de búsqueda -->
-        <form class="d-flex align-items-center ms-3 me-auto">
-          <span class="me-2 text-muted"><i class="fa-solid fa-magnifying-glass"></i></span>
-          <input class="form-control" type="search" placeholder="Buscar empleo, habilidades o empresas..." aria-label="Buscar">
+        <form class="d-flex flex-grow-1 mx-3">
+          <input class="form-control" type="search" placeholder="Buscar empleo, habilidades o empresas..."
+            aria-label="Buscar">
         </form>
-
-        <!-- Íconos de navegación -->
-        <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
+        <ul class="navbar-nav flex-row align-items-center gap-3 mb-0">
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-house d-block"></i><small>Inicio</small></a>
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-house"></i><br><small>Inicio</small></a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-user-group d-block"></i><small>Mi red</small></a>
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-user-group"></i><br><small>Mi red</small></a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-suitcase d-block"></i><small>Empleos</small></a>
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-suitcase"></i><br><small>Empleos</small></a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-message d-block"></i><small>Mensajes</small></a>
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-message"></i><br><small>Mensajes</small></a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-bell d-block"></i><small>Notificaciones</small></a>
+            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-bell"></i><br><small>Notificaciones</small></a>
           </li>
-
-          <!-- Menú desplegable Me -->
           <li class="nav-item dropdown text-center">
-            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMe" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-user d-block"></i><small>Yo</small>
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-user"></i><br><small>Yo</small>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMe">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Ver perfil</a></li>
               <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
             </ul>
           </li>
-
-          <!-- Menú desplegable Trabajo -->
           <li class="nav-item dropdown text-center">
-            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownWork" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-braille d-block"></i><small>Trabajo</small>
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-braille"></i><br><small>Trabajo</small>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownWork">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dashboard</a></li>
               <li><a class="dropdown-item" href="#">Herramientas</a></li>
             </ul>
           </li>
-
           <li class="nav-item">
-            <a class="btn btn-warning btn-sm ms-2" href="#">Prueba Premium gratis</a>
+            <a class="btn btn-premium btn-sm ms-2" href="#">Prueba Premium gratis</a>
           </li>
         </ul>
       </div>
     </nav>
- 
 
-    <!-- =================== NAVABR ENDED HERE ===================== -->
-    <div class="container">
-      <aside>
-        <div class="sidebar">
-          <div class="top"></div>
-          <img src="./Images/dp.jpg" alt="" />
-
-          <div class="profile">
-            <a href="#">Akshay R Verma</a>
-            <small>Front End Web Developer & Designer</small>
-            <hr id="profile">
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Sidebar -->
+        <aside class="col-md-3">
+          <div class="sidebar text-center bg-white border rounded p-3">
+            <img src="imagenes/65cff24e18a33e51eda1fc67_Blog - Fotografía de marca personal para tu sitio web y material promocional_TT.jpg" alt="Foto de perfil" class="img-fluid rounded-circle">
+            <h6 class="mt-2">Martin Leiva</h6>
+            <div class="d-flex flex-column align-items-center small">
+              <a href="inicio.html" class="text-muted text-decoration-none">Tegucigalpa, Honduras</a>
+              <a href="inicio.html" class="text-dark text-decoration-none">Universidad Nacional Autónoma de Honduras</a>
+            </div>
+            <hr>
           </div>
-          <div class="view">
-              <div class="views">
-                  <h6>Who viewed your profile</h6>
-                  <a href="#">42</a>
+
+            <div class="sidebar mt-3 bg-white border rounded p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a href="ubicacion.html" class="text-dark text-decoration-none fw-semibold">Contactos</a><br>
+                  <a href="universidad.html" class="text-muted text-decoration-none small">Amplia tu red</a>
+                </div>
+                <a href="icono.html" class="ms-2">
+                  <i class="fa-solid fa-user-plus" style="color: #000000;"></i>
+                </a>
               </div>
-              <div class="views">
-                  <h6>View of your post</h6>
-                  <a href="#">64</a>
+            </div>
+
+          <div class="sidebar mt-3 bg-white border rounded p-3">
+            <div class="d-flex flex-column small">
+              <a class="text-muted text-decoration-none">Obtén informacion y herramientas exclusivas</a>
+            </div>
+            <a href="perfil.html" class="link-icon-text"></a>
+              <i class="fa-solid fa-square me-2" style="color: #f2a92c;"></i>
+              <span> Canjea Premiun por </span>
+            </a>
+          </div>
+
+          <div class="sidebar mt-3 bg-white border rounded p-3">
+            <a href="perfil.html" class="link-icon-text">
+              <i class="fa-solid fa-bookmark me-2" style="color: #000000;"></i>
+              <span> Elementos Guardados </span>
+            </a>
+            <a href="perfil.html" class="link-icon-text">
+              <i class="fa-solid fa-user-group me-2" style="color: #000000;"></i>
+              <span> Grupos </span>
+            </a>
+            <a href="perfil.html" class="link-icon-text">
+              <i class="fa-solid fa-newspaper me-2" style="color: #000000;"></i>
+              <span> Newsletters </span>
+            </a>
+            <a href="perfil.html" class="link-icon-text">
+              <i class="fa-solid fa-calendar me-2" style="color: #000000;"></i>
+              <span> Eventos </span>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Sección Principal -->
+        <main class="col-md-6">
+
+          <div class="main_section bg-white border rounded p-3 mb-3">
+            <div class="d-flex align-items-center mb-3">
+              <img src="imagenes/65cff24e18a33e51eda1fc67_Blog - Fotografía de marca personal para tu sitio web y material promocional_TT.jpg" alt="Foto de" class="rounded-circle" width="40">
+              <input type="search" class="form-control ms-2" placeholder="Start a post">
+            </div>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-light"><i class="fa-brands fa-youtube" style="color:#1b9613;"></i> Video</button>
+              <button class="btn btn-light"><i class="fa-solid fa-image" style="color: #74C0FC;"></i> Foto</button>
+              <button class="btn btn-light"><i class="fa-solid fa-newspaper" style="color: #e26522;"></i> Escribir Artículo</button>
+            </div>
+          </div>
+
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <!-- Encabezado del usuario -->
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://via.placeholder.com/40" alt="Perfil" class="rounded-circle me-2" width="40" height="40">
+                <div>
+                  <h6 class="mb-0">Juan Pérez</h6>
+                  <small class="text-muted">Hace 2 horas · <i class="fa-solid fa-earth-americas"></i></small>
+                </div>
               </div>
-              <hr id="view">
+
+              <!-- Texto de la publicación -->
+              <p>Hoy fue un gran día para el equipo. ¡Gracias a todos los que lo hicieron posible! 🎉</p>
+
+              <!-- Imagen o multimedia -->
+              <img src="imagenes/descarga (5).jpeg" class="img-fluid rounded" alt="Publicación">
+
+              <!-- Reacciones -->
+              <div class="d-flex justify-content-between text-muted mt-2 mb-2">
+                <small><i class="fa-solid fa-thumbs-up text-primary me-1"></i> 120</small>
+                <small>34 comentarios · 10 compartidos</small>
+              </div>
+
+              <hr class="my-1">
+
+              <!-- Acciones -->
+              <div class="d-flex justify-content-around text-muted">
+                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-thumbs-up me-1" style="color: #000000;"></i>Recomendar</button>
+                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-comment me-1" style="color: #000000;"></i> Comentar</button>
+                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-share-from-square me-1" style="color: #000000;"></i>Compartir</button>
+                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-paper-plane me-1" style="color: #000000;"></i>Enviar</button>
+              </div>
+            </div>
           </div>
-          <div class="premium">
-              <h6>Access exclusive tools & insights</h6>
-              <a href="#"><i class="fa-solid fa-box"></i>Try Premium for free</a>
-              <hr id="premium">
-          </div>
-          <div class="items">
-            <i class="fa-solid fa-bookmark"></i>
-            <h6>My Items</h6>
-        </div>
-        </div>
 
-        <div class="recent_jobs">
-            <div class="recent">
-                <h6>Recent</h6>
-                <div class="one">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>Web Designer, HTML & CSS...</h6>
-                </div>
-                <div class="one">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>The Flexbox Jobs...</h6>
-                </div>
-                <div class="one">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>Front End Developer Group</h6>
-                </div>
-                <div class="one">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>UI Developer / Front End...</h6>
-                </div>
-            </div>
-            <div class="groups">
-                <h5>Groups</h5>
-                <div class="two">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>Web Designer, HTML & CSS...</h6>
-                </div>
-                <div class="two">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>The Flexbox Jobs...</h6>
-                </div>
-                <div class="two">
-                    <i class="fa-solid fa-users"></i>
-                    <h6>Front End Developer Group</h6>
-                </div>
-                <div class="show">
-                    <h6>Show more</h6>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </div>
-            <div class="events">
-                <h6>Events</h6>
-                <i class="fa-solid fa-plus"></i>
-            </div>
-            <div class="discover">
-                <a href="#">Discover more</a>
-            </div>
-        </div>
-      </aside>
 
-      <!-- ============ Sidebar end here ============= -->
 
-      <main>
-        <div class="main_section">
-            <div id="close"><i class="fa-solid fa-xmark"></i></div>
-            <div class="event">
-                <h3>Upcoming event from LinkedIn</h3>
-            </div>
-            <div class="box">
-                <img src="./Images/event.png" alt="">
-                <div class="content">
-                    <p>Join the next Career Talks virtual event to learn effective strategies for re-entering the workforce after taking a break</p>
-                </div>
-                <button class="btn">Learn more</button>
-            </div>
-        </div>
-        <div class="media">
-            <div class="search">
-                <img src="./Images/dp.jpg" alt="">
-                <input type="search" placeholder="Start a post">
-            </div>
-            <div class="posts">
-            <div class="post">
-                <i class="fa-solid fa-image"></i>
-                <h5>Photo</h5>
-            </div>
-            <div class="post">
-                <i class="fa-solid fa-video"></i>
-                <h5>Video</h5>
-            </div>
-            <div class="post">
-                <i class="fa-solid fa-briefcase"></i>
-                <h5>Job</h5>
-            </div>
-            <div class="post">
-                <i class="fa-solid fa-pen"></i>
-                <h5>Write Article</h5>
-            </div>
-        </div>
-        </div>
-      </main>
+        </main>
 
-      <!-- ============ main section end here ============= -->
-
-      <div class="right_side">
-          <div class="news">
-              <h4>Linkedin News</h4>
+        <!-- Right Side -->
+        <aside class="col-md-3">
+          <div class="right_side bg-white border rounded p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="mb-0">LinkedIn News</h5>
               <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <ul class="list-unstyled">
+              <li><i class="fa-solid fa-circle me-2"></i> Preparing for virtual interviews <small class="d-block text-muted">1d ago</small></li>
+              <li><i class="fa-solid fa-circle me-2"></i> Biden visits US troops in Poland <small class="d-block text-muted">13hr ago</small></li>
+              <li><i class="fa-solid fa-circle me-2"></i> What Indian customers are spending on <small class="d-block text-muted">1d ago</small></li>
+              <li><i class="fa-solid fa-circle me-2"></i> Create your own career luck <small class="d-block text-muted">3d ago</small></li>
+              <li><i class="fa-solid fa-circle me-2"></i> The latest in the startup world <small class="d-block text-muted">3d ago</small></li>
+            </ul>
+            <a href="#" class="text-decoration-none">Mostrar más <i class="fa-solid fa-angle-down"></i></a>
           </div>
-          <div class="latest_news">
-              <div class="one">
-                <i class="fa-solid fa-circle"></i>
-                <h5>Preparing for virtual interviews</h5>
-              </div>
-              <div class="two">
-                  <small>1d ago</small>
-              </div>
-          </div>
-          <div class="latest_news">
-              <div class="one">
-                <i class="fa-solid fa-circle"></i>
-                <h5>Biden visits US troops in Poland</h5>
-              </div>
-              <div class="two">
-                  <small>13hr ago</small>
-              </div>
-          </div>
-          <div class="latest_news">
-              <div class="one">
-                <i class="fa-solid fa-circle"></i>
-                <h5>What Indian customers are spending on</h5>
-              </div>
-              <div class="two">
-                  <small>1d ago</small>
-              </div>
-          </div>
-          <div class="latest_news">
-              <div class="one">
-                <i class="fa-solid fa-circle"></i>
-                <h5>Create your own career luck</h5>
-              </div>
-              <div class="two">
-                  <small>3d ago</small>
-              </div>
-          </div>
-          <div class="latest_news">
-              <div class="one">
-                <i class="fa-solid fa-circle"></i>
-                <h5>The latest in the startup world</h5>
-              </div>
-              <div class="two">
-                  <small>3d ago</small>
-              </div>
-          </div>
-          <div class="show_more">
-              <h5>Show more</h5>
-              <i class="fa-solid fa-angle-down"></i>
-          </div>
+        </aside>
       </div>
-
-      <!-- ============ Right side end here ============= -->
     </div>
 
-
-      <!-- ============ bootstrap ============= -->  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
+
 </html>
+
