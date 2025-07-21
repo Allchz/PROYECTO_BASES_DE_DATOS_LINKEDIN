@@ -13,6 +13,7 @@
 body {
   background-color: var(--linkedin-gray-light);
   color: var(--linkedin-text);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Barra de navegación */
@@ -41,17 +42,94 @@ body {
   text-decoration: underline;
 }
 
-
-/* Sidebar perfil */
+/* Sidebar de conversaciones */
 .sidebar {
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid var(--linkedin-border);
+  background-color: white;
+}
+
+.message-preview {
+  cursor: pointer;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--linkedin-border);
+}
+
+.message-preview:hover {
+  background-color: var(--linkedin-bg-hover);
+}
+
+/* Panel de mensajes */
+.message-box {
+  height: 80vh;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid var(--linkedin-border);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.message-input {
+  border-top: 1px solid var(--linkedin-border);
+  background-color: white;
+}
+
+/* Botón enviar */
+.btn-primary {
+  background-color: var(--linkedin-blue);
+  border-color: var(--linkedin-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--linkedin-blue-dark);
+  border-color: var(--linkedin-blue-dark);
+}
+
+/* Área de título del mensaje */
+#message-title {
+  background-color: white;
+  padding: 1rem;
+  border-bottom: 1px solid var(--linkedin-border);
+}
+
+/* Tarjetas individuales dentro de la sidebar */
+.sidebar-card {
   background-color: white;
   border: 1px solid var(--linkedin-border);
   border-radius: 8px;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* Elemento hover (para botones, tarjetas, etc.) */
-.hover-light:hover {
-  background-color: var(--linkedin-bg-hover);
-  cursor: pointer;
+/* Alineación limpia de los iconos con texto */
+.link-icon-text {
+  display: flex;
+  align-items: center;
+  color: var(--linkedin-text);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
 }
+
+.link-icon-text:hover {
+  text-decoration: underline;
+}
+
+/* Caja de mensajes */
+.message-box {
+  height: 60vh;
+  overflow-y: auto;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid var(--linkedin-border);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Noticias fijas (sticky) */
+.right_side.sticky-top {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
