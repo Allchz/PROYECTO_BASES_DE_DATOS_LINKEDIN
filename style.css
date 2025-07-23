@@ -94,7 +94,7 @@ body {
   border-bottom: 1px solid var(--linkedin-border);
 }
 
-/* Tarjetas individuales dentro de la sidebar */
+/* Tarjetas individuales*/
 .sidebar-card {
   background-color: white;
   border: 1px solid var(--linkedin-border);
@@ -127,9 +127,58 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Noticias fijas (sticky) */
+/* Noticias */
 .right_side.sticky-top {
   max-height: 80vh;
   overflow-y: auto;
+}
+
+/* Notificaciones */
+.notifications-section h5 {
+  font-weight: 600;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid var(--linkedin-border);
+  background-color: white;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item.unread {
+  background-color: var(--linkedin-bg-hover);
+  font-weight: 500;
+}
+
+.list-group-item.unread:hover {
+  background-color: #dce6f1;
+}
+
+/* Botón de filtro redondeado */
+.btn-pill {
+  border-radius: 999px;
+  padding: 0.375rem 1rem;
+  font-weight: 500;
+}
+
+.btn-pill.active {
+  background-color: var(--linkedin-blue);
+  color: white;
+  border-color: var(--linkedin-blue);
+}
+
+.btn-pill:hover {
+  background-color: var(--linkedin-blue-dark);
+  color: white;
+}
+
+/* Imagenes de notificaciones */
+.notifications-section img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 

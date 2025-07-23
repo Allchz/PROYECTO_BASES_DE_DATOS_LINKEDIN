@@ -1,3 +1,5 @@
+/* Mensajes  */
+
 const chats = {
   'Ana': [
     { sender: 'Ana', text: 'Hola, ¿cómo estás?' },
@@ -43,3 +45,13 @@ function sendMessage() {
   input.value = '';
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+/* Notificaciones */
+
+function markAllAsRead() {
+  const items = document.querySelectorAll('#notificationList .unread');
+  items.forEach(item => {
+    item.classList.remove('unread');
+  });
+}
+

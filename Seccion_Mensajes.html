@@ -29,7 +29,7 @@
         </form>
         <ul class="navbar-nav flex-row align-items-center gap-3 mb-0">
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-house"></i><br><small>Inicio</small></a>
+            <a class="nav-link text-dark" href="Inicio.html"><i class="fa-solid fa-house"></i><br><small>Inicio</small></a>
           </li>
           <li class="nav-item text-center">
             <a class="nav-link text-dark" href="#"><i class="fa-solid fa-user-group"></i><br><small>Mi red</small></a>
@@ -38,10 +38,10 @@
             <a class="nav-link text-dark" href="#"><i class="fa-solid fa-suitcase"></i><br><small>Empleos</small></a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-message"></i><br><small>Mensajes</small></a>
+            <a class="nav-link text-dark" href="Seccion_Mensajes.html"><i class="fa-solid fa-message"></i><br><small>Mensajes</small></a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-bell"></i><br><small>Notificaciones</small></a>
+            <a class="nav-link text-dark" href="Notificaciones.html"><i class="fa-solid fa-bell"></i><br><small>Notificaciones</small></a>
           </li>
           <li class="nav-item dropdown text-center">
             <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
@@ -72,15 +72,24 @@
       <div class="row">
          <!-- Columna izquierda: Lista de conversaciones -->
         <div class="col-md-4 sidebar bg-white p-3">
-          <h5>Mensajes</h5>
-          <div class="message-preview p-2 border-bottom" onclick="loadMessages('Ana')">
-            <strong>Ana López</strong><br>
-            <small>Hola, ¿cómo estás?</small>
-          </div>
-          <div class="message-preview p-2 border-bottom" onclick="loadMessages('Carlos')">
-            <strong>Carlos Pérez</strong><br>
-            <small>¿Listo para la reunión?</small>
-          </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0">Mensajes</h5>
+            <a href="#" class="text-dark"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>
+            </div>
+            <div class="message-preview p-2 border-bottom d-flex align-items-center" onclick="loadMessages('Ana')">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana López" class="rounded-circle me-2" width="40" height="40">
+            <div></a>
+              <strong>Ana López</strong><br>
+              <small>Hola, ¿cómo estás?</small>
+            </div>
+            </div>
+            <div class="message-preview p-2 border-bottom d-flex align-items-center" onclick="loadMessages('Carlos')">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Pérez" class="rounded-circle me-2" width="40" height="40">
+            <div>
+              <strong>Carlos Pérez</strong><br>
+              <small>¿Listo para la reunión?</small>
+            </div>
+            </div>
         </div>
 
         <!-- Columna central: Chat activo -->
