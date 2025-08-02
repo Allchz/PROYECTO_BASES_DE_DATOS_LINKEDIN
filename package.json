@@ -1,0 +1,18 @@
+{
+  "name": "proyecto_bases_de_datos_linkedin",
+  "version": "1.0.0",
+  "description": "Este proyecto es parte del curso de **Bases de Datos** y busca replicar las funcionalidades clave de una plataforma tipo **LinkedIn**, permitiendo a los usuarios crear perfiles, conectarse con otros y explorar oportunidades laborales. Actualmente estamos desarrollando el **Frontend** del sistema.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "oracledb": "^6.9.0"
+  }
+}
