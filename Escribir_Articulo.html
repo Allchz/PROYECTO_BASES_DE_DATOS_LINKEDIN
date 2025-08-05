@@ -48,7 +48,7 @@
               <i class="fa-solid fa-user"></i><br><small>Yo</small>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Perfil.html">Ver perfil</a></li>
+              <li><a class="dropdown-item" href="#">Ver perfil</a></li>
               <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
             </ul>
           </li>
@@ -132,55 +132,21 @@
 
         <!-- Sección Principal -->
         <main class="col-md-6">
-
-          <div class="main_section bg-white border rounded p-3 mb-3">
-            <div class="d-flex align-items-center mb-3">
-              <img src="imagenes/65cff24e18a33e51eda1fc67_Blog - Fotografía de marca personal para tu sitio web y material promocional_TT.jpg" alt="Foto de" class="rounded-circle" width="40">
-              <input type="search" class="form-control ms-2" placeholder="Start a post">
-            </div>
-            <div class="d-flex justify-content-between">
-              <button class="btn btn-light"><i class="fa-brands fa-youtube" style="color:#1b9613;"></i> Video</button>
-              <button class="btn btn-light"><i class="fa-solid fa-image" style="color: #74C0FC;"></i> Foto</button>
-                <a href="Escribir_Articulo.html" class="btn btn-light">
-                <i class="fa-solid fa-newspaper" style="color: #e26522;"></i> Escribir Artículo
-                </a>
-            </div>
-          </div>
-
-          <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-              <!-- Encabezado del usuario -->
-              <div class="d-flex align-items-center mb-3">
-                <img src="https://via.placeholder.com/40" alt="Perfil" class="rounded-circle me-2" width="40" height="40">
-                <div>
-                  <h6 class="mb-0">Juan Pérez</h6>
-                  <small class="text-muted">Hace 2 horas · <i class="fa-solid fa-earth-americas"></i></small>
+          <div class="container my-4">
+            <!-- Escribir publicación -->
+            <div class="publicacion-box">
+              <form method="post" action="">
+                <div class="d-flex align-items-start mb-3">
+                  <img src="" class="profile-thumb" alt="Perfil" />
+                  <textarea class="form-control textarea-publi" name="contenido" rows="3" placeholder="¿Qué estás pensando, Allison?"></textarea>
                 </div>
-              </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary px-4 rounded-pill">Publicar</button>
+                </div>
+              </form>
+           </div>
 
-              <!-- Texto de la publicación -->
-              <p>Hoy fue un gran día para el equipo. ¡Gracias a todos los que lo hicieron posible! 🎉</p>
-
-              <!-- Imagen -->
-              <img src="imagenes/descarga (5).jpeg" class="img-fluid rounded" alt="Publicación">
-
-              <!-- Reacciones -->
-              <div class="d-flex justify-content-between text-muted mt-2 mb-2">
-                <small><i class="fa-solid fa-thumbs-up text-primary me-1"></i> 120</small>
-                <small>34 comentarios · 10 compartidos</small>
-              </div>
-
-              <hr class="my-1">
-
-              <!-- Acciones -->
-              <div class="d-flex justify-content-around text-muted">
-                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-thumbs-up me-1" style="color: #000000;"></i>Recomendar</button>
-                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-comment me-1" style="color: #000000;"></i> Comentar</button>
-                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-share-from-square me-1" style="color: #000000;"></i>Compartir</button>
-                <button class="btn btn-light text-dark w-100"><i class="fa-regular fa-paper-plane me-1" style="color: #000000;"></i>Enviar</button>
-              </div>
-            </div>
-          </div>
+          
 
         </main>
 
