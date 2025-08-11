@@ -1,0 +1,128 @@
+body {
+    font-family: 'GUGI', sans-serif;
+    background-color: white
+  }
+
+  .auth-container {
+    width: 1050px;
+    height: 980px;
+    font-size: 25px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .auth-left {
+    background: rgba(170, 170, 170, 0.298);
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .auth-left img {
+    width: 700px;
+
+  }
+
+  .auth-image {
+    width: 100px;
+    height: auto;
+    opacity: 0.3;
+  }
+
+  .auth-right {
+    background-color: #fff;
+    flex: 1;
+
+    font-size: 25px;
+    margin-left: 250px;
+    margin-bottom: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+  }
+
+  .form-container {
+    margin-top: 300px;
+    margin-left: 100px;
+    width: 750px;
+    max-width: 400px;
+
+  }
+
+  .form-control {
+    border-radius: 8px !important;
+    background-color: #f1f1f1 !important;
+    border: none !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    padding-left: 25px !important;
+  }
+
+  .form-check-input:checked {
+    background-color: #0072CE;
+    border-color: #0072CE;
+  }
+
+  .nav-tabs .nav-link {
+    border: none;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #000;
+  }
+
+  .btn-custom {
+    background-color: #2300bd;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .btn-facebook {
+    background-color: #1877f2;
+    color: white;
+  }
+
+  .btn-google {
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+  }
+
+  .btn-apple {
+    background-color: black;
+    color: white;
+  }
+
+  .social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .tab-content {
+    margin-top: 1.5rem;
+    
+  }
+
+.imagen-medica{
+    width: 50px;
+}
+
+.nav-link{
+    margin-left: 10px;
+}
+
+a{
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+a img{
+  margin-left: -100px;
+}
