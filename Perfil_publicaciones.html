@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feed LinkedIn</title>
+    <title>Perfil LinkedIn</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -67,102 +67,42 @@
         </ul>
       </div>
     </nav>
-
     <div class="container mt-4">
       <div class="row">
-        <aside class="col-md-3">
-
-          <!-- Tarjeta: Perfil -->
-          <div class="sidebar-card text-center">
-            <img src="imagenes/65cff24e18a33e51eda1fc67_Blog - Fotografía de marca personal para tu sitio web y material promocional_TT.jpg" 
-                alt="Foto de perfil" class="img-fluid rounded-circle mb-2">
-            <h6 class="mt-2">
-              <a href="Perfil_publicaciones.html" class="text-dark text-decoration-none">Martin Leiva</a>
-            </h6>
-            <div class="d-flex flex-column align-items-center small">
-              <a href="inicio.html" class="text-muted text-decoration-none">Tegucigalpa, Honduras</a>
-              <a href="inicio.html" class="text-dark text-decoration-none">Universidad Nacional Autónoma de Honduras</a>
+        <!-- Perfil principal -->
+        <div class="col-md-8">
+          <div class="perfil mb-4">
+            <!-- Fondo de portada -->
+            <div class="portada">
+              <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1200&h=400&q=80" class="img-fluid portada-img" alt="Portada">
+              <button class="editar-portada btn btn-light btn-sm"><i class="fa-solid fa-pen"></i> Editar portada</button>
             </div>
-            <hr>
-          </div>
-          <!-- Tarjeta: Contactos -->
-          <div class="sidebar-card">
-            <div class="d-flex justify-content-between align-items-center">
-              <div>
-                <a href="ubicacion.html" class="text-dark text-decoration-none fw-semibold">Contactos</a><br>
-                <a href="universidad.html" class="text-muted text-decoration-none small">Amplia tu red</a>
+            <!-- Imagen de perfil -->
+            <div class="contenedor-perfil">
+              <img src="imagenes/65cff24e18a33e51eda1fc67_Blog - Fotografía de marca personal para tu sitio web y material promocional_TT.jpg" class="foto-perfil rounded-circle" alt="Foto de perfil">
+              <div class="nombre-perfil">
+                <a href="Perfil.html" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen"></i> Editar perfil</a>
+                <a href="Perfil_publicaciones.html" class="btn btn-outline-success btn-sm ms-2"><i class="fa-solid fa-newspaper"></i> Publicaciones</a>
               </div>
-              <a href="icono.html" class="ms-2">
-                <i class="fa-solid fa-user-plus" style="color: #000000;"></i>
-              </a>
             </div>
           </div>
-
-          <!-- Tarjeta: Premium -->
-          <div class="sidebar-card">
-            <div class="d-flex flex-column small">
-              <span class="text-muted">Obtén información y herramientas exclusivas</span>
-            </div>
-            <a href="perfil.html" class="link-icon-text mt-2">
-              <i class="fa-solid fa-square me-2" style="color: #f2a92c;"></i>
-              <span>Canjea Premium por</span>
-            </a>
-          </div>
-
-          <!-- Tarjeta: Guardados, Grupos, etc. -->
-          <div class="sidebar-card">
-            <a href="perfil.html" class="link-icon-text">
-              <i class="fa-solid fa-bookmark me-2"></i>
-              <span>Elementos Guardados</span>
-            </a>
-            <a href="perfil.html" class="link-icon-text">
-              <i class="fa-solid fa-user-group me-2"></i>
-              <span>Grupos</span>
-            </a>
-            <a href="perfil.html" class="link-icon-text">
-              <i class="fa-solid fa-newspaper me-2"></i>
-              <span>Newsletters</span>
-            </a>
-            <a href="perfil.html" class="link-icon-text">
-              <i class="fa-solid fa-calendar me-2"></i>
-              <span>Eventos</span>
-            </a>
-          </div>
-       </aside>
-
-        <!-- Sección Principal -->
-        <main class="col-md-6">
-
-          <div class="main_section bg-white border rounded p-3 mb-3">
-            <div class="d-flex align-items-center mb-3">
-              <img src="imagenes/65cff24e18a33e51eda1fc67_Blog - Fotografía de marca personal para tu sitio web y material promocional_TT.jpg" alt="Foto de" class="rounded-circle" width="40">
-              <input type="search" class="form-control ms-2" placeholder="Start a post">
-            </div>
-            <div class="d-flex justify-content-between">
-              <button class="btn btn-light"><i class="fa-brands fa-youtube" style="color:#1b9613;"></i> Video</button>
-              <button class="btn btn-light"><i class="fa-solid fa-image" style="color: #74C0FC;"></i> Foto</button>
-                <a href="Escribir_Articulo.html" class="btn btn-light">
-                <i class="fa-solid fa-newspaper" style="color: #e26522;"></i> Escribir Artículo
-                </a>
-            </div>
-          </div>
-
+          <!-- Publicaciones -->
           <div class="card mb-4 shadow-sm">
             <div class="card-body">
               <!-- Encabezado del usuario -->
               <div class="d-flex align-items-center mb-3">
-                <img src="https://via.placeholder.com/40" alt="Perfil" class="rounded-circle me-2" width="40" height="40">
+                <img src="imagenes/65cff24e18a33e51eda1fc67_Blog - Fotografía de marca personal para tu sitio web y material promocional_TT.jpg" alt="Perfil" class="rounded-circle me-2" width="40" height="40">
                 <div>
-                  <h6 class="mb-0">Juan Pérez</h6>
+                  <h6 class="mb-0">Martin Leiva</h6>
                   <small class="text-muted">Hace 2 horas · <i class="fa-solid fa-earth-americas"></i></small>
                 </div>
               </div>
 
               <!-- Texto de la publicación -->
-              <p>Hoy fue un gran día para el equipo. ¡Gracias a todos los que lo hicieron posible! 🎉</p>
+              <p> Nuevas Experiencias 🎉</p>
 
               <!-- Imagen -->
-              <img src="imagenes/descarga (5).jpeg" class="img-fluid rounded" alt="Publicación">
+              <img src="imagenes/4574122.jpg" class="img-fluid rounded" alt="Publicación">
 
               <!-- Reacciones -->
               <div class="d-flex justify-content-between text-muted mt-2 mb-2">
@@ -187,14 +127,14 @@
                 <div class="d-flex mb-2">
                   <img src="imagenes/imagen 1.jpg" class="rounded-circle me-2" width="35" height="35">
                   <div>
-                    <strong>María López</strong>
-                    <p class="mb-1">¡Felicidades al equipo! 💪</p>
+                    <strong>Jorge Lopéz</strong>
+                    <p class="mb-1">¡Felicidades! 💪</p>
                   </div>
                 </div>
                 <div class="d-flex mb-2">
                   <img src="imagenes/imagen 2.jpg" class="rounded-circle me-2" width="35" height="35">
                   <div>
-                    <strong>Carlos Gómez</strong>
+                    <strong>Miranda Lino</strong>
                     <p class="mb-1">Gran trabajo, todos lo hicieron excelente.</p>
                   </div>
                 </div>
@@ -208,9 +148,11 @@
             </div>
           </div>
 
-        </main>
+          
 
-        <!-- Right Side -->
+        </div>
+        
+        <!-- Sección Noticias-->
         <aside class="col-md-3">
           <div class="right_side bg-white border rounded p-3">
             <div class="d-flex justify-content-between align-items-center mb-3">
@@ -229,15 +171,16 @@
         </aside>
       </div>
     </div>
+    
+
+    
+  
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="Script/comentarios.js"></script>
     <script src="Script/script"></script>
-      
-
-      
+    <script src="Script/comentarios.js"></script>
   </body>
 
 </html>

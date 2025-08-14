@@ -55,5 +55,26 @@ function markAllAsRead() {
   });
 }
 
+/* Comentarios */
+document.getElementById("btnComentar").addEventListener("click", function () {
+  let texto = document.getElementById("comentarioTexto").value.trim();
+  if (texto !== "") {
+    let nuevoComentario = document.createElement("div");
+    nuevoComentario.classList.add("comentario");
+    nuevoComentario.innerHTML = `<strong>Tú:</strong> ${texto}`;
+    document.getElementById("comentarios").appendChild(nuevoComentario);
+    document.getElementById("comentarioTexto").value = "";
+  }
+});
+
+/*Eliminacion de Cuenra*/
+function confirmarEliminacion() {
+  if (confirm("⚠️ ¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer.")) {
+    alert("Tu cuenta ha sido eliminada.");
+    // Aquí iría la lógica real para eliminar la cuenta en el servidor
+  } else {
+    alert("La eliminación de la cuenta ha sido cancelada.");
+  }
+}
 
 
